@@ -1,20 +1,26 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
-}
+  title: "Budgetize",
+  description:
+    "Budgetize is an open source personal finance tracker that helps you manage your money, plan expenses, and gain insights into your spending habits.",
+  authors: [
+    {
+      name: "Jorge Hernández",
+      url: "https://github.com/fer-hnndz",
+    },
+  ],
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body>{children}</body>
     </html>
-  )
+  );
 }
