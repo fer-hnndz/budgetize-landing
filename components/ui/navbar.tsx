@@ -44,8 +44,8 @@ export default function Navbar() {
         </div>
       </div>
 
-      <header className="z-0 sticky top-0 w-full border-b bg-white">
-        <div className="container flex h-16 items-center justify-between">
+      <header className="z-0 sticky top-0 w-full bg-white px-8 lg:px-0">
+        <div className="mx-auto container flex h-16 items-center justify-between">
           <Image
             src="/Budgetize-Logo-Black.svg"
             alt="Budgetize Logo"
@@ -72,9 +72,9 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          <div className="flex flex-row items-center gap-x-3">
+          <div className="w-fit flex flex-row items-center gap-x-3">
             <div className="flex items-center gap-4">
-              <Button className="bg-[#6964b5] hover:bg-[#5a56a3]">
+              <Button className="bg-[#6964b5] text-white hover:bg-[#5a56a3]">
                 Open App
               </Button>
             </div>
