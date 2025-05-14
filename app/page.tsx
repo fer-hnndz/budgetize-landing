@@ -142,7 +142,7 @@ export default async function Index() {
             <div className="py-12">
               <div className="w-6/7 mx-auto text-center">
                 <h1 className="mx-auto text-2xl font-bold w-fit sm:text-4xl">Join the Mailing List</h1>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="mx-auto max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Stay updated on our journey — and be the first to access exclusive rewards when we launch
                 </p>
               </div>
