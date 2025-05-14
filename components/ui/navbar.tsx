@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { IoMenu } from "react-icons/io5";
 import { useState } from "react";
 
@@ -17,7 +16,7 @@ export default function Navbar() {
     <>
       {/* Navbar on mobile */}
       <div
-        className={`bg-white w-screen h-screen absolute z-50 flex flex-col text-4xl font-extrabold pl-5 ${
+        className={`fixed bg-white w-screen h-screen z-50 flex flex-col text-4xl font-extrabold pl-5 ${
           open ? "flex" : "hidden"
         }`}
       >
@@ -44,7 +43,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <header className="z-0 sticky top-0 w-full bg-white px-8 lg:px-0">
+      <header className="z-40 sticky top-0 w-full bg-white px-8 lg:px-0">
         <div className="mx-auto container flex h-16 items-center justify-between">
           <Image
             src="/Budgetize-Logo-Black.svg"
@@ -74,9 +73,9 @@ export default function Navbar() {
 
           <div className="w-fit flex flex-row items-center gap-x-3">
             <div className="flex items-center gap-4">
-              <Button className="bg-[#6964b5] text-white hover:bg-[#5a56a3]">
+              <button className="p-2 rounded-md bg-[#6964b5] text-sm text-white hover:bg-[#5a56a3]">
                 Open App
-              </Button>
+              </button>
             </div>
 
             <div onClick={handleMenuClick} className="w-fit text-4xl lg:hidden">
