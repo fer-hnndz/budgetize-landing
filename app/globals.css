@@ -37,3 +37,7 @@
   --color-budgetGold: #f9b14d;
   --color-budgetTerracota: #f06655;
 }
+
+body {
+  scroll-behavior: smooth!important;
+}

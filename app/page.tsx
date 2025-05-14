@@ -25,19 +25,28 @@ export default async function Index() {
                   <p className="max-w-[600px] text-gray-700 md:text-xl">
                     Budgetize is an open source personal finance tracker that helps you manage your money, plan
                     expenses, and gain insights into your spending habits.
+                    <br />
+                    Coming Soon.
                   </p>
                 </div>
 
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
+                  {/* <Link
                     className="flex flex-row bg-[#6964b5] rounded-md items-center justify-center text-sm text-white p-2"
                     href="https://web.budgetizeapp.com"
                   >
                     <span className="ml-2">Start Budgeting</span>
                     <FaLongArrowAltRight className="ml-2 mr-2" />
+                  </Link> */}
+                  <Link
+                    className="flex flex-row bg-[#6964b5] rounded-md items-center justify-center text-sm text-white p-2"
+                    href="#mailing-list"
+                  >
+                    <span className="ml-2">Join the Mailing List</span>
+                    <FaLongArrowAltRight className="ml-2 mr-2" />
                   </Link>
 
-                  <button className="bg-white rounded-md p-2 text-sm hover:cursor-pointer">Learn More</button>
+                  {/* <button className="bg-white rounded-md p-2 text-sm hover:cursor-pointer">Learn More</button> */}
                 </div>
               </div>
 
@@ -124,6 +133,94 @@ export default async function Index() {
                     Available on any browser on desktop and as a home screen app on mobile devices.
                   </p>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
+          <section id="mailing-list">
+            <div className="py-12">
+              <div className="w-6/7 mx-auto text-center">
+                <h1 className="mx-auto text-2xl font-bold w-fit sm:text-4xl">Join the Mailing List</h1>
+                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Stay updated on our journey — and be the first to access exclusive rewards when we launch
+                </p>
+              </div>
+
+              <div
+                className="mx-auto"
+                id="mc_embed_signup"
+                style={{
+                  background: "#fff",
+                  fontFamily: "Helvetica, Arial, sans-serif",
+                  width: "100%",
+                  maxWidth: "600px",
+                }}
+              >
+                <form
+                  action="https://gmail.us6.list-manage.com/subscribe/post?u=65b6be58aa0fcd8c541241f1f&amp;id=d3bda395c6&amp;f_id=003e21e2f0"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  className="validate"
+                  target="_blank"
+                  noValidate
+                >
+                  <div className="indicates-required">
+                    <span className="asterisk">*</span> indicates required
+                  </div>
+                  <div className="mc-field-group">
+                    <label htmlFor="mce-EMAIL">
+                      Email Address <span className="asterisk">*</span>
+                    </label>
+                    <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required />
+                  </div>
+
+                  <div style={{ position: "absolute", left: "-5000px" }} aria-hidden="true">
+                    <input type="text" name="b_65b6be58aa0fcd8c541241f1f_d3bda395c6" tabIndex={-1} defaultValue="" />
+                  </div>
+
+                  <div className="optionalParent">
+                    <div className="clear foot">
+                      <input
+                        type="submit"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        className="button"
+                        value="Subscribe"
+                      />
+                      <p style={{ margin: "0 auto" }}>
+                        <Link
+                          href="http://eepurl.com/jcHiSI"
+                          title="Mailchimp - email marketing made easy and fun"
+                          target="_blank"
+                        >
+                          <span
+                            style={{
+                              display: "inline-block",
+                              backgroundColor: "black",
+                              borderRadius: "4px",
+                            }}
+                          >
+                            <img
+                              className="refferal_badge"
+                              src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-light.svg"
+                              alt="Intuit Mailchimp"
+                              style={{
+                                width: "220px",
+                                height: "40px",
+                                display: "flex",
+                                padding: "2px 0",
+                                justifyContent: "center",
+                                alignItems: "center",
+                              }}
+                            />
+                          </span>
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </section>
